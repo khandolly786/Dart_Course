@@ -8,7 +8,7 @@
 //     var map_name = {key1:value1,key2:value2,key3:value3};
 
 
-import 'package:flutter/foundation.dart';
+
 
 main(){
 
@@ -19,6 +19,26 @@ main(){
     'key4':false
   };
   print(map_name);
+  print(map_name['key1']); // returns the vale as valu1
+  print(map_name['Key1']);   //returns null
+  map_name['key1']='dolly';
+  print(map_name);
+  map_name['Key1']='doll';
+  print(map_name);
+  map_name['key5']='value5';
+  print(map_name);
+  map_name.remove('key5');
+  print(map_name);
+  print(map_name.keys);
+  print(map_name.values);
+  print(map_name.length);
+  print(map_name.isEmpty);
+  print(map_name.isNotEmpty);
+  print(map_name.containsKey('key1'));
+  print(map_name.containsValue('value1'));
+  print(map_name.containsKey('key6'));
+  print(map_name.containsValue('value6'));
+  map_name.addAll({'key6':'value6'});
 
   print('hello world!');
 }
