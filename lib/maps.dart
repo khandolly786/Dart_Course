@@ -11,34 +11,51 @@
 
 
 main(){
+  //
+  // var map_name={
+  //   'key1':'value1',
+  //   'key2':2,
+  //   'key3':true,
+  //   'key4':false
+  // };
+  // print(map_name);
+  // print(map_name['key1']); // returns the vale as valu1
+  // print(map_name['Key1']);   //returns null
+  // map_name['key1']='dolly';
+  // print(map_name);
+  // map_name['Key1']='doll';
+  // print(map_name);
+  // map_name['key5']='value5';
+  // print(map_name);
+  // map_name.remove('key5');
+  // print(map_name);
+  // print(map_name.keys); //returns all the keys
+  // print(map_name.values);  //returns all the values
+  // print(map_name.length);  //returns the number of keys
+  // print(map_name.isEmpty);  //returns true or false
+  // print(map_name.isNotEmpty);  //returns true or false
+  // print(map_name.containsKey('key1'));  //returns true or false
+  // print(map_name.containsValue('value1'));  //returns true or false
+  // print(map_name.containsKey('key6'));  //returns true or false
+  // print(map_name.containsValue('value6'));  //returns true or false
+  // map_name.addAll({'key6':'value6'});  //adds all the values
+  //
+  //
 
-  var map_name={
-    'key1':'value1',
-    'key2':2,
-    'key3':true,
-    'key4':false
-  };
-  print(map_name);
-  print(map_name['key1']); // returns the vale as valu1
-  print(map_name['Key1']);   //returns null
-  map_name['key1']='dolly';
-  print(map_name);
-  map_name['Key1']='doll';
-  print(map_name);
-  map_name['key5']='value5';
-  print(map_name);
-  map_name.remove('key5');
-  print(map_name);
-  print(map_name.keys);
-  print(map_name.values);
-  print(map_name.length);
-  print(map_name.isEmpty);
-  print(map_name.isNotEmpty);
-  print(map_name.containsKey('key1'));
-  print(map_name.containsValue('value1'));
-  print(map_name.containsKey('key6'));
-  print(map_name.containsValue('value6'));
-  map_name.addAll({'key6':'value6'});
+  var map_name2= Map();
+
+  map_name2['name']= 'darakhshan';
+  map_name2['surname2']= 3.5;
+  map_name2['middlename3']= 6;
+  map_name2['endname4']= true;
+
+  print(map_name2.isEmpty);
+  print(map_name2.isNotEmpty);
+  print(map_name2.keys);
+  print(map_name2.values);
+  print(map_name2.length);
+
+
 
   print('hello world!');
 }
