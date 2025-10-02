@@ -1,0 +1,7 @@
+buttons are the graphical control element that provides
+A user to trigger an event such as taking actions, making choices, searching things, and many more. They can be placed everywhere in our
+UI like dialogs, forms, cards, toolbars, etc.
+Types of Button:
+1. Text Button(Flat)
+2. Elevated Button(Raised)
+3. Outlined Button
