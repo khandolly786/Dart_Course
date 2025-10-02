@@ -44,12 +44,34 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text("flutter container"),
       ),
-      body: Container(
-        width: 500,
-        height: 800,
-        color: Colors.teal,
-        child: Center(child: Text('Hello Darakhshannnnnn', style: TextStyle(fontSize: 25), ))
+      body: Center(
+        child: ElevatedButton(
+          child: Text('click here bruhhh on elevated!!'),
+          onPressed: (){
+            print('button clicked'); // print on terminal
+          },
+          onLongPress: (){
+            print('button long pressed');
+          }
+        ),
       )
+
+      // TextButton(
+      //   child: Text('click here!!'),
+      //   onPressed: (){
+      //     print('button clicked'); // print on terminal
+      //   },
+      //   onLongPress: (){
+      //     print('button long pressed');
+      //   }
+      //
+      // )
+      // Container(
+      //   width: 500,
+      //   height: 800,
+      //   color: Colors.teal,
+      //   child: Center(child: Text('Hello Darakhshannnnnn', style: TextStyle(fontSize: 25), ))
+      // )
       //Center(
       //    child:  Text('Hello Darakhshannnnnn', style: TextStyle(fontSize: 25), )
       // )
