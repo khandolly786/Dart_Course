@@ -5,3 +5,5 @@
 // also a class to store one or more widgets and position them in a tree-like structure
 // containers in flutter allows many attributes to the user for decorating its child widgets such as margin, which separates the container with other contents
 // it is a feature to decor the ui layout
+// it is like a storage
+
