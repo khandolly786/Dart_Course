@@ -45,8 +45,8 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("flutter container"),
       ),
       body: Center(
-        child: ElevatedButton(
-          child: Text('click here bruhhh on elevated!!'),
+        child: OutlinedButton(
+          child: Text('click here bruhhh on outline!!'),
           onPressed: (){
             print('button clicked'); // print on terminal
           },
@@ -55,6 +55,15 @@ class _MyHomePageState extends State<MyHomePage> {
           }
         ),
       )
+      // ElevatedButton(
+      //   child: Text('click here bruhhh on elevated!!'),
+      //   onPressed: (){
+      //     print('button clicked'); // print on terminal
+      //   },
+      //   onLongPress: (){
+      //     print('button long pressed');
+      //   }
+      // )
 
       // TextButton(
       //   child: Text('click here!!'),
