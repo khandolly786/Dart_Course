@@ -44,9 +44,15 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text("flutter container"),
       ),
-      body: Center(
-         child:  Text('Hello Darakhshannnnnn', style: TextStyle(fontSize: 25), )
+      body: Container(
+        width: 500,
+        height: 800,
+        color: Colors.teal,
+        child: Center(child: Text('Hello Darakhshannnnnn', style: TextStyle(fontSize: 25), ))
       )
+      //Center(
+      //    child:  Text('Hello Darakhshannnnnn', style: TextStyle(fontSize: 25), )
+      // )
       // Text(' Hello thereeeee ', style: TextStyle(
       //   fontSize: 25,
       //   color: Colors.lightBlue,
