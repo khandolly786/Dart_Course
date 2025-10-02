@@ -45,16 +45,22 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text("flutter container"),
       ),
       body: Center(
-        child: OutlinedButton(
-          child: Text('click here bruhhh on outline!!'),
-          onPressed: (){
-            print('button clicked'); // print on terminal
-          },
-          onLongPress: (){
-            print('button long pressed');
-          }
-        ),
-      )
+          child: Container(
+            width: 100,
+              height: 100,
+
+              child: Image.asset('assets/images/SIGN.jpg')))
+      // Center(
+      //   child: OutlinedButton(
+      //     child: Text('click here bruhhh on outline!!'),
+      //     onPressed: (){
+      //       print('button clicked'); // print on terminal
+      //     },
+      //     onLongPress: (){
+      //       print('button long pressed');
+      //     }
+      //   ),
+      // )
       // ElevatedButton(
       //   child: Text('click here bruhhh on elevated!!'),
       //   onPressed: (){
