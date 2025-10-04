@@ -44,12 +44,22 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text("flutter container"),
       ),
-      body: Center(
-          child: Container(
-            width: 100,
-              height: 100,
-
-              child: Image.asset('assets/images/SIGN.jpg')))
+      body: Row(
+        children: [
+          Text('A', style: TextStyle(fontSize: 25),),
+          Text('B', style: TextStyle(fontSize: 25),),
+          Text('C', style: TextStyle(fontSize: 25),),
+          Text('D', style: TextStyle(fontSize: 25),),
+          Text('E', style: TextStyle(fontSize: 25),),
+          Text('F', style: TextStyle(fontSize: 25),),
+         ],
+      )
+      // Center(
+      //     child: Container(
+      //       width: 100,
+      //         height: 100,
+      //
+      //         child: Image.asset('assets/images/SIGN.jpg')))
       // Center(
       //   child: OutlinedButton(
       //     child: Text('click here bruhhh on outline!!'),
