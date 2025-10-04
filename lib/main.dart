@@ -44,15 +44,20 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text("flutter container"),
       ),
-      body: Row(
-        children: [
-          Text('A', style: TextStyle(fontSize: 25),),
-          Text('B', style: TextStyle(fontSize: 25),),
-          Text('C', style: TextStyle(fontSize: 25),),
-          Text('D', style: TextStyle(fontSize: 25),),
-          Text('E', style: TextStyle(fontSize: 25),),
-          Text('F', style: TextStyle(fontSize: 25),),
-         ],
+      body: Container(
+        height: 300,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Text('A', style: TextStyle(fontSize: 25),),
+            Text('B', style: TextStyle(fontSize: 25),),
+            Text('C', style: TextStyle(fontSize: 25),),
+            Text('D', style: TextStyle(fontSize: 25),),
+            Text('E', style: TextStyle(fontSize: 25),),
+            Text('F', style: TextStyle(fontSize: 25),),
+           ],
+        ),
       )
       // Center(
       //     child: Container(
