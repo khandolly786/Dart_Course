@@ -38,41 +38,63 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        title: Text("flutter container"),
-      ),
-      body: Container(
-        height: 300,
-        width: 300,
-        child: Column(
-
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            Text('A', style: TextStyle(fontSize: 25),),
-            Text('B', style: TextStyle(fontSize: 25),),
-            Text('C', style: TextStyle(fontSize: 25),),
-            Text('D', style: TextStyle(fontSize: 25),),
-            Text('E', style: TextStyle(fontSize: 25),),
-            Text('F', style: TextStyle(fontSize: 25),),
-           ],
-        // child: Row(
-
-          // mainAxisAlignment: MainAxisAlignment.start,
-          // crossAxisAlignment: CrossAxisAlignment.center,
-          // children: [
-          //   Text('A', style: TextStyle(fontSize: 25),),
-          //   Text('B', style: TextStyle(fontSize: 25),),
-          //   Text('C', style: TextStyle(fontSize: 25),),
-          //   Text('D', style: TextStyle(fontSize: 25),),
-          //   Text('E', style: TextStyle(fontSize: 25),),
-          //   Text('F', style: TextStyle(fontSize: 25),),
-          //  ],
+        appBar: AppBar(
+          backgroundColor: Theme
+              .of(context)
+              .colorScheme
+              .inversePrimary,
+          title: Text("flutter container"),
         ),
-      )
+        body: Center(
+          child: InkWell(
+            onTap: () {
+              print('Tapped on Container');
+            },
+            onLongPress: () {
+              print('Long pressed on Container');
+            },
+            onDoubleTap: () {
+              print('Double tapped on Container');
+            },
+
+            child: Container(
+              width: 200,
+              height: 200,
+              color: Colors.pink,
+            ),
+          ),
+        )
+      // Container(
+      //   height: 300,
+      //   width: 300,
+      //   child: Column(
+      //
+      //     mainAxisAlignment: MainAxisAlignment.spaceAround,
+      //     crossAxisAlignment: CrossAxisAlignment.end,
+      //     children: [
+      //       Text('A', style: TextStyle(fontSize: 25),),
+      //       Text('B', style: TextStyle(fontSize: 25),),
+      //       Text('C', style: TextStyle(fontSize: 25),),
+      //       Text('D', style: TextStyle(fontSize: 25),),
+      //       Text('E', style: TextStyle(fontSize: 25),),
+      //       Text('F', style: TextStyle(fontSize: 25),),
+      //      ],
+      // child: Row(
+
+      // mainAxisAlignment: MainAxisAlignment.start,
+      // crossAxisAlignment: CrossAxisAlignment.center,
+      // children: [
+      //   Text('A', style: TextStyle(fontSize: 25),),
+      //   Text('B', style: TextStyle(fontSize: 25),),
+      //   Text('C', style: TextStyle(fontSize: 25),),
+      //   Text('D', style: TextStyle(fontSize: 25),),
+      //   Text('E', style: TextStyle(fontSize: 25),),
+      //   Text('F', style: TextStyle(fontSize: 25),),
+      //  ],
+
+    );
+  }
       // Center(
       //     child: Container(
       //       width: 100,
@@ -135,6 +157,5 @@ class _MyHomePageState extends State<MyHomePage> {
       //   ),
       // )
 
-    );
   }
-}
+
