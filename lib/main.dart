@@ -49,91 +49,105 @@ class _MyHomePageState extends State<MyHomePage> {
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: SingleChildScrollView(
-            child: Builder(
-              builder: (context) {
-                return Column(
-                  children: [
-                    Row(
+            child: Column(
+              children: [
+                Builder(
+                  builder: (context) {
+                    return Column(
+                      children: [
+                        SingleChildScrollView(
+                          scrollDirection: Axis.horizontal,
+                          child: Row(
+                          children: [
+                            Container(
+                              margin: EdgeInsets.only(right: 1),
+                              height: 200,
+                              width: 200,
+                              color: Colors.pink,
+                              child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(right: 1),
+                              height: 200,
+                              width: 200,
+                              color: Colors.green,
+                              child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(right: 1),
+                              height: 200,
+                              width: 200,
+                              color: Colors.greenAccent,
+                              child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                            ),
+                            Container(
+                              margin: EdgeInsets.only(right: 1),
+                              height: 200,
+                              width: 200,
+                              color: Colors.lightBlueAccent,
+                              child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                            ),
+                          ],
+                        ),
+                        )
+                      ],
+                    );
+                  }
+                ),
+                Builder(
+                  builder: (context) {
+                    return Column(
                       children: [
                         Container(
-                          margin: EdgeInsets.only(bottom: 1),
+                          margin: EdgeInsets.only(bottom: 4),
                           height: 200,
-                          width: 200,
-                          color: Colors.pink,
-                          child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
-                        ),
-                        Container(
-                          margin: EdgeInsets.only(bottom: 1),
-                          height: 200,
-                          width: 200,
+                          width: 1000,
                           color: Colors.green,
-                          child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
                         ),
                         Container(
                           margin: EdgeInsets.only(bottom: 1),
                           height: 200,
-                          width: 200,
-                          color: Colors.greenAccent,
-                          child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                          width: 1000,
+                          color: Colors.lime,
                         ),
                         Container(
                           margin: EdgeInsets.only(bottom: 1),
                           height: 200,
-                          width: 200,
-                          color: Colors.lightBlueAccent,
-                          child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                          width: 1000,
+                          color: Colors.purple,
                         ),
+                        Container(
+                          margin: EdgeInsets.only(bottom: 11),
+                          height: 200,
+                          width: 1000,
+                          color: Colors.pink,
+                        ),
+
+                        Container(
+                          margin: EdgeInsets.only(bottom: 11),
+                          height: 200,
+                          width: 1000,
+                          color: Colors.green,
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(bottom: 11),
+                          height: 200,
+                          width: 1000,
+                          color: Colors.lime,
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(bottom: 11),
+                          height: 200,
+                          width: 1000,
+                          color: Colors.purple,
+                        )
+
+                       // Text('Hello world'),
                       ],
-                    ),
-                
-                    Container(
-                      margin: EdgeInsets.only(bottom: 4),
-                      height: 200,
-                      width: 1000,
-                      color: Colors.green,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(bottom: 1),
-                      height: 200,
-                      width: 1000,
-                      color: Colors.lime,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(bottom: 1),
-                      height: 200,
-                      width: 1000,
-                      color: Colors.purple,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(bottom: 11),
-                      height: 200,
-                      width: 1000,
-                      color: Colors.pink,
-                    ),
-                
-                    Container(
-                      margin: EdgeInsets.only(bottom: 11),
-                      height: 200,
-                      width: 1000,
-                      color: Colors.green,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(bottom: 11),
-                      height: 200,
-                      width: 1000,
-                      color: Colors.lime,
-                    ),
-                    Container(
-                      margin: EdgeInsets.only(bottom: 11),
-                      height: 200,
-                      width: 1000,
-                      color: Colors.purple,
-                    )
-                
-                   // Text('Hello world'),
-                  ],
-                );
-              }
+                    );
+                  }
+                ),
+              ],
             ),
           ),
         )
