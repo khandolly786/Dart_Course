@@ -46,31 +46,97 @@ class _MyHomePageState extends State<MyHomePage> {
               .inversePrimary,
           title: Text("flutter container"),
         ),
-        body: Center(
-          child: InkWell(
-            onTap: () {
-              print('Tapped on Container');
-            },
-            onLongPress: () {
-              print('Long pressed on Container');
-            },
-            onDoubleTap: () {
-              print('Double tapped on Container');
-            },
-
-            child: Container(
-              width: 200,
-              height: 200,
-              color: Colors.pink,
-              child: Center(
-                  child: InkWell(
-                    onTap: (){
-                      print('inkwell button clicked');
-                    },
-                      child: Text("click here", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),))),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SingleChildScrollView(
+            child: Builder(
+              builder: (context) {
+                return Column(
+                  children: [
+                    Container(
+                      margin: EdgeInsets.only(bottom: 1),
+                      height: 200,
+                      width: 1000,
+                      color: Colors.pink,
+                      child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                    ),
+                
+                    Container(
+                      margin: EdgeInsets.only(bottom: 4),
+                      height: 200,
+                      width: 1000,
+                      color: Colors.green,
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(bottom: 1),
+                      height: 200,
+                      width: 1000,
+                      color: Colors.lime,
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(bottom: 1),
+                      height: 200,
+                      width: 1000,
+                      color: Colors.purple,
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(bottom: 11),
+                      height: 200,
+                      width: 1000,
+                      color: Colors.pink,
+                    ),
+                
+                    Container(
+                      margin: EdgeInsets.only(bottom: 11),
+                      height: 200,
+                      width: 1000,
+                      color: Colors.green,
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(bottom: 11),
+                      height: 200,
+                      width: 1000,
+                      color: Colors.lime,
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(bottom: 11),
+                      height: 200,
+                      width: 1000,
+                      color: Colors.purple,
+                    )
+                
+                   // Text('Hello world'),
+                  ],
+                );
+              }
             ),
           ),
         )
+        // Center(
+        //   child: InkWell(
+        //     onTap: () {
+        //       print('Tapped on Container');
+        //     },
+        //     onLongPress: () {
+        //       print('Long pressed on Container');
+        //     },
+        //     onDoubleTap: () {
+        //       print('Double tapped on Container');
+        //     },
+        //
+        //     child: Container(
+        //       width: 200,
+        //       height: 200,
+        //       color: Colors.pink,
+        //       child: Center(
+        //           child: InkWell(
+        //             onTap: (){
+        //               print('inkwell button clicked');
+        //             },
+        //               child: Text("click here", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),))),
+        //     ),
+        //   ),
+        // )
       // Container(
       //   height: 300,
       //   width: 300,
