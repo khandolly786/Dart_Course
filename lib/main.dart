@@ -53,12 +53,37 @@ class _MyHomePageState extends State<MyHomePage> {
               builder: (context) {
                 return Column(
                   children: [
-                    Container(
-                      margin: EdgeInsets.only(bottom: 1),
-                      height: 200,
-                      width: 1000,
-                      color: Colors.pink,
-                      child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                    Row(
+                      children: [
+                        Container(
+                          margin: EdgeInsets.only(bottom: 1),
+                          height: 200,
+                          width: 200,
+                          color: Colors.pink,
+                          child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(bottom: 1),
+                          height: 200,
+                          width: 200,
+                          color: Colors.green,
+                          child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(bottom: 1),
+                          height: 200,
+                          width: 200,
+                          color: Colors.greenAccent,
+                          child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(bottom: 1),
+                          height: 200,
+                          width: 200,
+                          color: Colors.lightBlueAccent,
+                          child: Center(child: Text('Hello guyzz', style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700), )),
+                        ),
+                      ],
                     ),
                 
                     Container(
