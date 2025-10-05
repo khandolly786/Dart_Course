@@ -62,6 +62,12 @@ class _MyHomePageState extends State<MyHomePage> {
               width: 200,
               height: 200,
               color: Colors.pink,
+              child: Center(
+                  child: InkWell(
+                    onTap: (){
+                      print('inkwell button clicked');
+                    },
+                      child: Text("click here", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w700),))),
             ),
           ),
         )
