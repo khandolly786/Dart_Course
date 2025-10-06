@@ -1,0 +1,2 @@
+one of the most common layout patterns is to arrange widgets vertically or horizontally
+we can use a Row widget to arrange widgets horizontally and a column widget to arrange widgets vertically
