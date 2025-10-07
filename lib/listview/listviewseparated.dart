@@ -7,7 +7,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widgaet is the root of your application.
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -43,7 +43,27 @@ class _MyHomePageState extends State<MyHomePage> {
           title: Text('Hello'),
         ),
         body: ListView.separated(itemBuilder: (context, index){
-          return Text(arrnames[index], style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),);
+          return Row(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Column(
+                  children: [
+                    Text(arrnames[index], style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),),
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Text(arrnames[index], style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),),
+                    ),
+                  ],
+                ),
+              ),
+
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(arrnames[index], style: TextStyle(fontSize: 21, fontWeight: FontWeight.w700),),
+              ),
+            ],
+          );
         },
           itemCount: arrnames.length,
           separatorBuilder: (context, index){
