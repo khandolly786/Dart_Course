@@ -1,0 +1,15 @@
+myapp name k class bni hui hai jisme aek page atleast create ho taaki chalaa ke dekh saku...
+void main hi hai wo class jo k starting point hota h
+run naam ka function hota hai aur iphone m cupertiono hoga aur android m materialapp hoga use
+aur agar nhi bhi krege to universal ui aayega hi
+two types of widgets are there stateless aur stateful
+stateless jisme state ki zrurt pdegi
+stateful m state ki need pdegi jisme stare ko manage krna pdega jisko update krne ki need hogi
+UI ko reflect krwana h to stateful us krna hoga
+extends krne k mtlb h ki statelesswidget ka use ho rh h is class m
+override krna pdta h yaha pe aur isime return krrhe h materialapp
+runapp jo run krayega materialapp ko
+kya naam rkh rhe ho theme rkh rhe ho
+app k nadar ek tho hona chhaiye ek page hoga hi homepage jisme statefulwidget hoga
+kyuki counter ki value ko update krrhi h jise hme ui m dikhana hoga islye stateful widget use ho rh h
+build function mil rh h jisme ui ki structure hohi puri trh se
