@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                 ),
               ],
-              shape: BoxShape.circle
+              shape: BoxShape.circle,
             ),
           ),
         ),
